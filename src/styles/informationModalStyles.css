@@ -1,0 +1,16 @@
+/* Define a cor da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+/* Define a aparência da "thumb" (a barra de rolagem propriamente dita) */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #ccc;
+}
+
+/* Define a aparência da "thumb" quando o mouse está sobre ela */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
