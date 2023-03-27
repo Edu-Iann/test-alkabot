@@ -7,7 +7,7 @@ import { submitOptionToRender } from '../redux/actions/index.js';
 import PostListPage from './PostListPage.jsx';
 import UserListPage from './UserListPage.jsx';
 
-const UserPostSwitch = () => {
+const SwitchListing = () => {
   const [showUsers, setShowUsers] = useState(true);
   const dispatch = useDispatch();
   const renderOptions = useSelector((state) => state.shouldRender);
@@ -36,10 +36,12 @@ const UserPostSwitch = () => {
           Postagens
         </Button>
       </ButtonGroup>
-      {renderOptions === 'USUÁRIOS' && <UserListPage />}
-      {renderOptions === 'POSTAGENS' && <PostListPage />}
+      <Box mt={4}>
+        {renderOptions === 'USUÁRIOS' && <UserListPage />}
+        {renderOptions === 'POSTAGENS' && <PostListPage />}
+      </Box>
     </Box>
   );
 };
 
-export default UserPostSwitch;
+export default SwitchListing;

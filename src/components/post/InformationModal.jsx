@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 
 import AssociatedCommentsList from './AssociatedCommentsList.jsx';
 
-import '../styles/informationModalStyles.css';
+import '../../styles/informationModalStyles.css';
 
 export function InformationModal({ post, open, onClose }) {
   return (

@@ -8,7 +8,7 @@ import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 
-import '../styles/informationModalStyles.css';
+import '../../styles/informationModalStyles.css';
 
 export function UserInformationModal({ post, open, onClose }) {
   const userEntries = Object.entries(post);
