@@ -1,26 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Provider } from 'react-redux';
 
-import { CardComponent } from './components/CardComponent.jsx';
-import { getPosts } from './services/api';
+import UserPostSwitch from './pages/Test.jsx';
+import store from './redux/store.js';
 
 import './App.css';
 
 function App() {
-  const [data, setData] = useState([]);
-
-  const fetchPosts = async () => {
-    const result = await getPosts();
-    console.log(result);
-    return setData(result);
-  };
-
-  useEffect(() => {
-    fetchPosts();
-  }, []);
-
   return (
     <div className='App'>
-      <CardComponent posts={data} />
+      <Provider store={store}>
+        <UserPostSwitch />
+      </Provider>
     </div>
   );
 }
