@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Grid } from '@material-ui/core';
 
 import LoadingComponent from '../components/LoadingComponent.jsx';
-import { UserCardComponent } from '../components/UserCardComponent.jsx';
+import { UserCardComponent } from '../components/user/UserCardComponent.jsx';
 import { getUsers } from '../services/api';
 
 const UserListPage = () => {

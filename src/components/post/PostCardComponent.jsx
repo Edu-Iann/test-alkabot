@@ -8,11 +8,11 @@ import {
 } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
-import { getPostComments } from '../services/api';
+import { getPostComments } from '../../services/api';
+import ButtonComponent from '../ButtonComponent.jsx';
+import RandomAvatar from '../RandomAvatar.jsx';
 
-import ButtonComponent from './ButtonComponent.jsx';
 import { InformationModal } from './InformationModal.jsx';
-import RandomAvatar from './RandomAvatar.jsx';
 
 export const PostCardComponent = ({ post }) => {
   const { title, id } = post;

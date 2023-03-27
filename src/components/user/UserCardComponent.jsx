@@ -8,10 +8,10 @@ import {
 } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
-import { getUserDetails } from '../services/api';
+import { getUserDetails } from '../../services/api';
+import ButtonComponent from '../ButtonComponent.jsx';
+import RandomAvatar from '../RandomAvatar.jsx';
 
-import ButtonComponent from './ButtonComponent.jsx';
-import RandomAvatar from './RandomAvatar.jsx';
 import { UserInformationModal } from './UserInformationModal.jsx';
 
 export const UserCardComponent = (info) => {
